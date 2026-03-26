@@ -14,20 +14,26 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
     <!-- Abstract Background Effects -->
     <div class="bg-glow bg-glow-1"></div>
     <div class="bg-glow bg-glow-2"></div>
     
     <nav class="navbar glass-panel">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">SS<span class="dot">.</span></a>
+            <a href="#hero" class="nav-logo">Sanchit<span class="dot">.</span></a>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#proof">Proof</a></li>
-                <li><a href="#contact" class="btn-primary nav-btn">Contact</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1V-nXfSQXmU7_chRDAZWFbjYvlGzBPWRH/view?usp=sharing" class="btn-primary nav-btn" target="_blank">Resume</a></li>
             </ul>
             <button class="mobile-menu-btn" aria-label="Toggle Menu">
                 <ion-icon name="menu-outline"></ion-icon>
@@ -40,13 +46,14 @@
         <section id="hero" class="section fade-in">
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <p class="greeting cinematic-gradient-text hover-glow">Predictive Systems. Intelligent Models.</p>
                     <h1 class="hero-title">Sanchit Sharma</h1>
-                    <h2 class="hero-tagline">I build intelligent systems that turn data into decisions.</h2>
-                    <p class="hero-subtext">Focusing on machine learning, predictive analytics, and end-to-end data-driven application architectures.</p>
+                    <p class="hero-subtext fade-in">I architect intelligent systems that turn raw data into decisions, focusing on end-to-end machine learning pipelines and predictive analytics.</p>
                     
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary glow-btn">Explore Work</a>
+                    <div class="hero-actions fade-in">
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn-primary glow-btn">Contact Me</a>
+                            <a href="https://drive.google.com/uc?export=download&id=1V-nXfSQXmU7_chRDAZWFbjYvlGzBPWRH" class="btn btn-outline glow-btn" target="_blank">Download CV</a>
+                        </div>
                         <div class="social-links">
                             <a href="https://github.com/SanchitSharma24" target="_blank" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
                             <a href="https://www.linkedin.com/in/sanchitsharma24/" target="_blank" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
@@ -57,107 +64,54 @@
                 
                 <div class="hero-visual">
                     <div class="image-wrapper glass-panel shadow-pop">
-                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800" alt="Sanchit Sharma - Code & Data abstraction" class="hero-img">
+                        <img src="assets/images/profile.jpg" alt="Sanchit Sharma" class="hero-img">
                         <div class="visual-accent gradient-overlay"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Code Intro Section -->
-        <section id="code-intro" class="section pt-0 fade-in">
+        <!-- Engineering Mindset & Code Section -->
+        <section id="about" class="section fade-in">
             <div class="container">
-                <div class="code-editor glass-panel shadow-hyper">
-                    <div class="editor-header">
-                        <div class="traffic-lights">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <div class="file-name">developer.js</div>
-                    </div>
-                    <div class="editor-body">
+                <div class="section-header center" style="margin-bottom: 4rem; display: flex; flex-direction: column; align-items: center;">
+                    <span style="color: var(--accent-primary); font-size: 0.85rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 0.75rem;">The Origin</span>
+                    <h2 class="section-title" style="color: #ffffff; font-size: clamp(2.5rem, 4.5vw, 3.5rem); font-weight: 700; line-height: 1.2; margin: 0;">Beyond isolated scripts.</h2>
+                </div>
+                
+                <div class="cinematic-layout align-center">
+                    <div class="code-column hover-scale">
+                        <div class="code-editor glass-panel shadow-hyper" style="transform: scale(1.05); transform-origin: center;">
+                            <div class="editor-header">
+                                <div class="traffic-lights">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="file-name">developer.js</div>
+                            </div>
+                            <div class="editor-body">
 <pre><code><span class="keyword">const</span> <span class="variable">developer</span> <span class="operator">=</span> {
   <span class="property">name</span>: <span class="string">"Sanchit Sharma"</span>,
-  <span class="property">role</span>: <span class="string">"Machine Learning Engineer & Data Systems Builder"</span>,
+  <span class="property">role</span>: <span class="string">"ML Engineer"</span>,
   <span class="property">focus</span>: <span class="string">"Predictive Systems & Data Intelligence"</span>,
-  <span class="property">skills</span>: [<span class="string">"Python"</span>, <span class="string">"Machine Learning"</span>, <span class="string">"Flask"</span>, <span class="string">"Power BI"</span>],
-  <span class="property">strength</span>: <span class="string">"Building real-world intelligent systems using APIs and data"</span>,
+  <span class="property">stack</span>: [<span class="string">"Python"</span>, <span class="string">"Scikit-Learn"</span>, <span class="string">"Flask"</span>, <span class="string">"Power BI"</span>],
   <span class="property">status</span>: <span class="string">"Open to opportunities"</span>
 };</code></pre>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Story Section -->
-        <section id="about" class="section fade-in">
-            <div class="container cinematic-layout">
-                <div class="section-header">
-                    <span class="section-badge">The Origin</span>
-                    <h2 class="section-title">Beyond isolated scripts.</h2>
-                </div>
-                <div class="story-content glass-panel card-glow">
-                    <p>My work sits at the intersection of raw data and actionable intelligence. I believe that data science is not just about training models—it’s about architecting complete, reliable systems that solve real-world problems.</p>
-                    <p>From extracting and parsing vast datasets, engineering predictive features, to deploying endpoints that deliver verdicts in real-time, my focus is bridging the gap between theoretical algorithms and deployed production systems.</p>
-                    <p>I don't just write code; <strong class="cinematic-gradient-text">I build intelligent pipelines.</strong></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section fade-in">
-            <div class="container">
-                <div class="section-header center">
-                    <h2 class="section-title">Architected Solutions</h2>
-                    <p>Complete systems bridging data, modeling, and deployment</p>
-                </div>
-
-                <!-- Hero Project -->
-                <div class="project-card hero-project glass-panel card-pop fade-in">
-                    <div class="project-media">
-                        <div class="gradient-wash"></div>
-                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1200" alt="Crypto Market Intelligence">
-                    </div>
-                    <div class="project-info">
-                        <div class="project-badges">
-                            <span class="badge highlight">Featured AI System</span>
-                        </div>
-                        <h3 class="project-title">Crypto Market Intelligence & Prediction System</h3>
-                        <p class="project-desc">An end-to-end intelligent platform aggregating real-time on-chain data and global news to forecast market movements. Leveraging dual ML methodologies—regression for pricing and classification for trend polarity—it resolves into a definitive Buy/Hold/Avoid verdict.</p>
-                        
-                        <div class="project-features">
-                            <ul>
-                                <li><ion-icon name="checkmark-circle"></ion-icon> Real-time ingestion via CoinGecko & NewsAPI</li>
-                                <li><ion-icon name="checkmark-circle"></ion-icon> Regression + Classification Matrix</li>
-                                <li><ion-icon name="checkmark-circle"></ion-icon> Live interactive investment simulation</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="tech-stack code-font">
-                            <span>Python</span><span>Scikit-Learn</span><span>Streamlit</span><span>Power BI</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Secondary Projects Grid -->
-                <div class="project-grid">
-                    <div class="project-card default-project glass-panel card-hover fade-in">
-                        <div class="project-info p-inner">
-                            <span class="badge">Predictive Pipeline</span>
-                            <h3 class="project-title sm">Rainfall Prediction System</h3>
-                            <p class="project-desc">A complete ML pipeline traversing extensive EDA, feature engineering, and robust model validation achieving 98% prediction accuracy. Surface-level intelligence exposed through a Flask REST API and comprehensive Power BI dashboards.</p>
-                            <div class="tech-stack sm code-font">
-                                <span>Flask</span><span>Machine Learning</span><span>EDA</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="project-card default-project glass-panel card-hover fade-in">
-                        <div class="project-info p-inner">
-                            <span class="badge">Full-Stack Application</span>
-                            <h3 class="project-title sm">Gamezon E-commerce</h3>
-                            <p class="project-desc">A robust operational e-commerce platform architecture handling transactional flows, user integrity, and product management data structures.</p>
-                            <div class="tech-stack sm code-font">
-                                <span>Web Architecture</span><span>Database System</span>
+                    
+                    <div class="story-column fade-in">
+                        <div class="story-content">
+                            <h3 class="cinematic-gradient-text" style="font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 500; line-height: 1.5; margin-bottom: 2rem; display: block;">I build intelligent systems, not just isolated scripts.</h3>
+                            
+                            <p>I bridge the gap between theoretical algorithms and deployed production systems, architecting complete, reliable pipelines that solve real-world problems.</p>
+                            <p>From extracting vast datasets and engineering predictive features, to deploying scalable endpoints tailored for real-time decisions, my work sits at the intersection of raw data and actionable intelligence.</p>
+                            
+                            <div class="traits-container">
+                                <span class="trait-chip">Problem Solver</span>
+                                <span class="trait-chip">ML Engineer</span>
+                                <span class="trait-chip">System Builder</span>
+                                <span class="trait-chip">Data-Driven Thinker</span>
                             </div>
                         </div>
                     </div>
@@ -168,7 +122,7 @@
         <!-- Skills Section -->
         <section id="skills" class="section fade-in">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header center">
                     <h2 class="section-title">Technical Mastery</h2>
                 </div>
                 
@@ -227,59 +181,122 @@
             </div>
         </section>
 
-        <!-- Code Statement -->
-        <section id="code" class="section fade-in divider-section">
-            <div class="container center text-glow-container">
-                <h2 class="cinematic-heading">Code & Experiments</h2>
-                <div class="glass-panel manifesto-card">
-                    <p class="manifesto-text">"I focus on building complete predictive systems rather than isolated code snippets."</p>
-                    <a href="https://github.com/SanchitSharma24" target="_blank" class="btn btn-outline glow-btn"><ion-icon name="logo-github"></ion-icon> View GitHub Architecture</a>
+        <!-- Projects Section -->
+        <section id="projects" class="section fade-in">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">Projects</h2>
+                </div>
+
+                <div class="project-grid-new">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel card-hover fade-in" data-project="crypto">
+                        <div class="project-info p-inner">
+                            <h3 class="project-title sm">Crypto Market Intelligence</h3>
+                            <p class="project-desc">End-to-end intelligent platform forecasting market movements using regression and classification matrices.</p>
+                            <div class="tech-stack sm code-font">
+                                <span>Python</span><span>Scikit-Learn</span><span>Streamlit</span><span>Power BI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel card-hover fade-in" data-project="rainfall">
+                        <div class="project-info p-inner">
+                            <h3 class="project-title sm">Rainfall Prediction System</h3>
+                            <p class="project-desc">Complete ML pipeline achieving 98% accuracy, exposed via Flask REST API with Power BI dashboards.</p>
+                            <div class="tech-stack sm code-font">
+                                <span>Flask</span><span>Machine Learning</span><span>EDA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel card-hover fade-in" data-project="gamezon">
+                        <div class="project-info p-inner">
+                            <h3 class="project-title sm">Gamezon E-commerce</h3>
+                            <p class="project-desc">Operational platform handling transactional flows, user integrity, and product management architectures.</p>
+                            <div class="tech-stack sm code-font">
+                                <span>Web Architecture</span><span>Database System</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Proof Section -->
-        <section id="proof" class="section fade-in">
+        <!-- Certifications Section -->
+        <section id="certifications" class="section fade-in divider-section">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Proof of Work</h2>
+                <div class="section-header center">
+                    <h2 class="section-title">Certifications / Certificates</h2>
                 </div>
-                <div class="proof-links glass-panel">
-                    <a href="{{RESUME_LINK}}" class="proof-item hover-scale" target="_blank">
-                        <div class="proof-icon"><ion-icon name="document-text"></ion-icon></div>
-                        <div class="proof-content">
-                            <h4>Curriculum Vitae</h4>
-                            <p>Download comprehensive resume</p>
-                        </div>
-                        <ion-icon name="arrow-forward-outline" class="go-icon"></ion-icon>
+                <div class="cert-grid-new">
+                    <a href="https://drive.google.com/file/d/12zCSpyMNSXO-IfTigN-watgxLVYcN_aN/preview" class="cert-card glass-panel hover-scale" target="_blank">
+                        <ion-icon name="ribbon-outline" class="cert-icon"></ion-icon>
+                        <h4>Privacy and Security in Online Social Media</h4>
+                        <p>NPTEL • IIT Hyderabad (Elite)</p>
                     </a>
-                    
-                    <a href="{{CERTIFICATES_FOLDER}}" class="proof-item hover-scale" target="_blank">
-                        <div class="proof-icon"><ion-icon name="ribbon"></ion-icon></div>
-                        <div class="proof-content">
-                            <h4>Certifications</h4>
-                            <p>Repository of achieved merits</p>
-                        </div>
-                        <ion-icon name="arrow-forward-outline" class="go-icon"></ion-icon>
+                    <a href="https://drive.google.com/file/d/1gk9GBePDUOgMmpWILCEBhZb-SE3AhbXi/preview" class="cert-card glass-panel hover-scale" target="_blank">
+                        <ion-icon name="ribbon-outline" class="cert-icon"></ion-icon>
+                        <h4>From Data to Decisions: A Hands-On Approach to Data Science</h4>
+                        <p>LPU • Centre for Professional Enhancement (A Grade)</p>
                     </a>
-                    
-                    <a href="{{CRYPTO_REPORT_LINK}}" class="proof-item hover-scale" target="_blank">
-                        <div class="proof-icon"><ion-icon name="stats-chart"></ion-icon></div>
-                        <div class="proof-content">
-                            <h4>Crypto ML Report</h4>
-                            <p>Deep dive into the prediction architecture</p>
-                        </div>
-                        <ion-icon name="arrow-forward-outline" class="go-icon"></ion-icon>
+                    <a href="https://drive.google.com/file/d/1Dwrhqw57_3hDpnhLHAt30wGzmO_KzzvX/preview" class="cert-card glass-panel hover-scale" target="_blank">
+                        <ion-icon name="ribbon-outline" class="cert-icon"></ion-icon>
+                        <h4>Mastering Data Structures & Algorithms using C and C++</h4>
+                        <p>Udemy • Abdul Bari (76 Hours)</p>
                     </a>
+                    <a href="https://drive.google.com/file/d/1KygwV--yWb1RzQJtWBuAHzPyYr9lEe3I/preview" class="cert-card glass-panel hover-scale" target="_blank">
+                        <ion-icon name="ribbon-outline" class="cert-icon"></ion-icon>
+                        <h4>Beginning C++ Programming – From Beginner to Beyond</h4>
+                        <p>Udemy • Tim Buchalka (46 Hours)</p>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1QFRIfK_En8hDX4o2eYYPSRn2eaAx7K_5/preview" class="cert-card glass-panel hover-scale" target="_blank">
+                        <ion-icon name="ribbon-outline" class="cert-icon"></ion-icon>
+                        <h4>The Complete Python Bootcamp: From Zero to Hero in Python</h4>
+                        <p>Udemy • Jose Portilla (22.5 Hours)</p>
+                    </a>
+                    <div class="cert-card glass-panel hover-scale" id="cert-more-btn" style="cursor: pointer; display: flex; align-items: center; justify-content: center; text-align: center;">
+                        <ion-icon name="add-circle-outline" class="cert-icon" style="margin-bottom: 0.5rem;"></ion-icon>
+                        <h4 style="margin: 0;">More</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section fade-in">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">Achievements</h2>
+                </div>
+                <div class="achievements-grid">
+                    <a href="https://drive.google.com/file/d/1boRCaySNzb5-wes-JqwOHeZTQfdrUSzN/preview" class="achievement-card glass-panel" target="_blank" style="text-decoration: none; color: inherit;">
+                        <ion-icon name="trophy-outline" class="achieve-icon"></ion-icon>
+                        <h4>Hackathon Finalist – HackWithVertos 1.0</h4>
+                        <p>Participated in a 24-hour hackathon, reaching top-performing teams while building solutions under time-constrained conditions.</p>
+                    </a>
+                    <div class="achievement-card glass-panel">
+                        <ion-icon name="analytics-outline" class="achieve-icon"></ion-icon>
+                        <h4>200+ Coding Problems Solved</h4>
+                        <p>Across LeetCode, HackerRank, CodeChef, and other platforms.</p>
+                    </div>
+                    <div class="achievement-card glass-panel">
+                        <ion-icon name="star-outline" class="achieve-icon"></ion-icon>
+                        <h4>Growing Every Day</h4>
+                        <p>Consistently improving problem-solving and development skills.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="section fade-in end-section">
-            <div class="container contact-layout">
-                <div class="contact-text">
-                    <h2 class="section-title massive-title">Let’s build something impactful.</h2>
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-text">
+                        <h2 class="section-title massive-title">Let’s build something impactful.</h2>
                     <p class="contact-sub">Available for robust data engineering and ML architecture roles.</p>
                     <div class="social-links large-social">
                         <a href="mailto:sanchit2462005@gmail.com"><ion-icon name="mail"></ion-icon> sanchit2462005@gmail.com</a>
@@ -304,8 +321,41 @@
                         <button type="submit" class="btn btn-primary btn-block glow-btn">Launch System Inquiry <ion-icon name="paper-plane-outline"></ion-icon></button>
                     </form>
                 </div>
+                </div>
             </div>
         </section>
+        <!-- Project Modal -->
+        <div id="project-modal" class="modal-overlay">
+            <div class="modal-content glass-panel" style="padding: 0;">
+                <button class="modal-close" id="modal-close-btn"><ion-icon name="close-outline"></ion-icon></button>
+                <div id="modal-body-content" style="height: 100%; display: flex; flex-direction: column;"></div>
+            </div>
+        </div>
+
+        <!-- Certifications Modal -->
+        <div id="cert-modal" class="modal-overlay">
+            <div class="modal-content glass-panel" style="padding: 3rem; height: auto; max-height: 85vh; display: block; max-width: 1200px;">
+                <button class="modal-close" id="cert-modal-close-btn"><ion-icon name="close-outline"></ion-icon></button>
+                <h3 class="modal-title" style="margin-bottom: 2rem; padding-right: 3rem;">Other Certifications / Certificates</h3>
+                <div class="cert-grid-new" id="cert-modal-body">
+                    <a href="https://drive.google.com/file/d/1jaRY15WSmK-ZUMAizdp0An83LVO_gyn8/preview" class="cert-card glass-panel hover-scale" target="_blank">
+                        <ion-icon name="ribbon-outline" class="cert-icon"></ion-icon>
+                        <h4>Microsoft Excel – Excel from Beginner to Advanced</h4>
+                        <p>Udemy • Kyle Pew (22 Hours)</p>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1kvVFWh9zb5r9wrI75SV3GaNS4oWxQoH-/preview" class="cert-card glass-panel hover-scale" target="_blank">
+                        <ion-icon name="ribbon-outline" class="cert-icon"></ion-icon>
+                        <h4>ChatGPT Made Easy: AI Essentials for Beginners</h4>
+                        <p>Udemy • Asif Farooqi (37 mins)</p>
+                    </a>
+                    <a href="https://drive.google.com/file/d/10QLIRIsBS4derJ7I5PxhMvmPrRTsW1bf/preview" class="cert-card glass-panel hover-scale" target="_blank">
+                        <ion-icon name="ribbon-outline" class="cert-icon"></ion-icon>
+                        <h4>Responsive Web Design</h4>
+                        <p>freeCodeCamp • Developer Certification (300 Hours)</p>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
